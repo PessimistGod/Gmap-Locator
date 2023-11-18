@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Map with Variables</title>
+</head>
+<body>
+
+    <div style="width: 100%">
+        <iframe
+            id="googleMap"
+            width="100%"
+            height="600"
+            frameborder="0"
+            scrolling="no"
+            marginheight="0"
+            marginwidth="0"
+            src=""
+            allowfullscreen
+        ></iframe>
+    </div>
+
+    <script>
+        var latitude = 12.8888999;
+        var longitude = 77.5544611;
+
+        var mapSrc = "https://maps.google.com/maps?width=100%25&height=600&hl=en&q=" + latitude + "," + longitude + "(My%20Business%20Name)&t=k&z=14&ie=UTF8&iwloc=B&output=embed";
+
+        document.getElementById("googleMap").src = mapSrc;
+    </script>
+
+</body>
+</html>
